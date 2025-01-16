@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Yethrq</title>
     <style>
-        {
+        /* Menghilangkan efek biru saat tombol ditekan di perangkat mobile */
+        * {
             -webkit-tap-highlight-color: transparent;
             -webkit-user-select: none;
             user-select: none;
@@ -68,7 +69,7 @@
             cursor: pointer;
             font-size: 15px;
             font-weight: 555;
-            -webkit-tap-highlight-color: transparent;
+            -webkit-tap-highlight-color: transparent; /* Hilangkan efek tap */
         }
 
         button:hover {
@@ -121,10 +122,10 @@
             const password = document.getElementById('password').value;
 
             if (username === "beta ye" && password === "seng ada") {
-                return true;
+                return true; // Login berhasil
             } else {
                 alert("Username atau password salah bodo eee");
-                return false;
+                return false; // Gagal login
             }
         }
     </script>
