@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Yethrq</title>
     <style>
+        {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
         body {
             margin: 0;
             padding: 0;
@@ -27,13 +33,13 @@
             width: 100%;
             max-width: 400px;
             text-align: center;
-
         }
 
         .login-container h1 {
             margin-bottom: 22px;
             color: #fff;
         }
+
         input[type="text"], input[type="password"] {
             width: 80%;
             padding: 10px;
@@ -43,14 +49,12 @@
             background: rgba(255, 255, 255, 0.1);
             color: white;
             font-size: 12px;
-         }
+        }
 
-         input[type="text"]::placeholder,
-         input[type="password"]::placeholder
-
-         {
-             color: rgba(255, 255, 255, 0.9);
-         }
+        input[type="text"]::placeholder,
+        input[type="password"]::placeholder {
+            color: rgba(255, 255, 255, 0.9);
+        }
 
         button {
             width: 35%;
@@ -64,41 +68,41 @@
             cursor: pointer;
             font-size: 15px;
             font-weight: 555;
+            -webkit-tap-highlight-color: transparent;
         }
-      button:hover {
-          background: #e0e0de;
-      }
+
+        button:hover {
+            background: #e0e0de;
+        }
+
         button:focus,
         button:active {
             outline: none;
             box-shadow: none;
-        }
-        
-        button {
-            -webkit-tap-highlight-color: transparent;
+            background: #d6d6d6;
+            transform: scale(0.98);
         }
 
         @media (max-width: 600px) {
-    .login-container {
-        width: 70%;
-        padding: 15px;
-    }
+            .login-container {
+                width: 70%;
+                padding: 15px;
+            }
 
-    .login-container h1 {
-        font-size: 22px;
-    }
+            .login-container h1 {
+                font-size: 22px;
+            }
 
-    .login-container input {
-        padding: 8px;
-    }
+            .login-container input {
+                padding: 8px;
+            }
 
-    .login-container button {
-        width: 28%;
-        height: 28px;
-        font-size: 12px;
-         font-weight: bold;
-    }
-}
+            .login-container button {
+                width: 28%;
+                height: 28px;
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -116,11 +120,11 @@
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
 
-            if (username === "Beta yek" && password === "seng ada") {
-                return true; // Login berhasil
+            if (username === "beta ye" && password === "seng ada") {
+                return true;
             } else {
                 alert("Username atau password salah bodo eee");
-                return false; // Gagal login
+                return false;
             }
         }
     </script>
