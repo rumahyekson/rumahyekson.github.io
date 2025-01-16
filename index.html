@@ -45,6 +45,11 @@
             font-size: 12px;
          }
 
+           input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    box-shadow: none;
+}
+
          input[type="text"]::placeholder,
          input[type="password"]::placeholder
 
@@ -64,10 +69,11 @@
             cursor: pointer;
             font-size: 15px;
             font-weight: 555;
-        }
-        button:hover {
-            background: #e0e0de;
-        }
+         }
+
+             button:hover {
+             background: #e0e0e0;
+             }
 
         @media (max-width: 600px) {
     .login-container {
@@ -106,10 +112,10 @@
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
 
-            if (username === "Beta yek" && password === "seng ada") {
+            if (username === "Beta ye" && password === "seng ada") {
                 return true;
             } else {
-                alert("salah bod lai eeeeee");
+                alert("Salah bod bod laai eeeee");
                 return false;
             }
         }
